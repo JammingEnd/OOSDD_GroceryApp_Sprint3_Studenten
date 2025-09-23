@@ -1,4 +1,4 @@
-﻿using CommunityToolkit.Maui.Alerts;
+﻿    using CommunityToolkit.Maui.Alerts;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Grocery.App.Views;
@@ -15,7 +15,9 @@ namespace Grocery.App.ViewModels
         private readonly IGroceryListItemsService _groceryListItemsService;
         private readonly IProductService _productService;
         private readonly IFileSaverService _fileSaverService;
-        
+    
+        public string ProductSearchString { get; set; } = string.Empty;
+        public ObservableCollection<Product> SearchBarResults { get; set; } = [];
         public ObservableCollection<GroceryListItem> MyGroceryListItems { get; set; } = [];
         public ObservableCollection<Product> AvailableProducts { get; set; } = [];
 
@@ -86,5 +88,14 @@ namespace Grocery.App.ViewModels
             }
         }
 
+        public void FilterProducts()
+        {
+
+        }
+
+        public void SearchBar_TextChanged()
+        {
+
+        }
     }
 }
