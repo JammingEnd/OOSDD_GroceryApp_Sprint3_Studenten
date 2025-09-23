@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using Grocery.Core.Services;
 
 namespace Grocery.App.ViewModels
 {
@@ -10,5 +11,6 @@ namespace Grocery.App.ViewModels
         public virtual void Load() { }
         public virtual void OnAppearing() { }
         public virtual void OnDisappearing() { }
+
     }
 }
